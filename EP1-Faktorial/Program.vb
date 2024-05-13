@@ -8,16 +8,19 @@ Module Program
         Console.Write("Zadej číslo: ")
         cislo = Console.ReadLine
         If cislo <= 0 Then
-            Console.Write("chyba vstupu")
+            Console.Write("Chybný vstup. Zadejte prosím celé číslo.")
             End
         End If
 
         If cislo > 10 Then
-            Console.Write("zadej menší číslo")
+            Console.Write("Zadali jste hodnotu vyšší než 10. Prosím zadejte nižší hodnotu.")
             End
         End If
 
-        If cislo Then
+        If cislo = 1 > 0 Then
+            Console.Write("Záporné hodnoty nejsou povoleny. Zadejte prosím kladné celé číslo.")
+            End
+        End If
 
 
 
@@ -27,7 +30,7 @@ Module Program
 
 
 
-            For i = 1 To cislo
+        For i = 1 To cislo
             soucet = soucet + i
         Next
 
