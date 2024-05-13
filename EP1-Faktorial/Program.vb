@@ -5,7 +5,7 @@ Module Program
         Dim cislo As Integer
         Dim soucet As Integer = 0
 
-        Console.Write("Zadej èíslo: ")
+        Console.Write("Zadej číslo: ")
         cislo = Console.ReadLine
         If cislo <= 0 Then
             Console.Write("chyba vstupu")
@@ -17,17 +17,21 @@ Module Program
             End
         End If
 
+        If cislo Then
 
 
 
 
 
 
-        For i = 1 To cislo
+
+
+
+            For i = 1 To cislo
             soucet = soucet + i
         Next
 
-        Console.WriteLine($"Souèet od 1 do {cislo} je {soucet}")
+            Console.WriteLine($"Součet od 1 do {cislo} je {soucet}")
 
     End Sub
 End Module
