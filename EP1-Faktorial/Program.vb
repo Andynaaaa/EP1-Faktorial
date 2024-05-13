@@ -7,10 +7,21 @@ Module Program
 
         Console.Write("Zadej èíslo: ")
         cislo = Console.ReadLine
-        If cislo Then <= 0 Then 
-        Console.Write("chyba vstupu")
-        End
+        If cislo <= 0 Then
+            Console.Write("chyba vstupu")
+            End
         End If
+
+        If cislo > 10 Then
+            Console.Write("zadej menší číslo")
+            End
+        End If
+
+
+
+
+
+
 
         For i = 1 To cislo
             soucet = soucet + i
