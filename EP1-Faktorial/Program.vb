@@ -7,6 +7,10 @@ Module Program
 
         Console.Write("Zadej èíslo: ")
         cislo = Console.ReadLine
+        If cislo Then <= 0 Then 
+        Console.Write("chyba vstupu")
+        End
+        End If
 
         For i = 1 To cislo
             soucet = soucet + i
